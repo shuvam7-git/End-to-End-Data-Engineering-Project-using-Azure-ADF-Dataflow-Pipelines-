@@ -45,4 +45,82 @@ This repository contains an end-to-end Azure Data Factory ETL pipeline built to 
 
 ---
 
-## Files & structure
+##  Architecture Overview  
+Below is the end-to-end architecture of the Azure Data Factory ETL pipeline used for COVID-19 reporting.
+
+### 🌐 Data Factory Overview
+![Data Factory Overview](assets/facttory_overview.png)
+
+---
+
+## 🔗 Linked Services
+
+### 🔹 HTTP Linked Service  
+![HTTP Linked Service](assets/ls_http_details.png)
+
+### 🔹 Lookup Linked Services  
+![Linked Services List](assets/linked_services_list.png)
+
+---
+
+## 📁 Datasets  
+
+### 🔹 Dataset List  
+![Dataset List](assets/dataset_list.png)
+
+### 🔹 Raw CSV (HTTP Source)
+![HTTP Raw CSV Dataset](assets/ecdc_raw_csv_http_ds.png)
+
+### 🔹 Raw CSV (Download Path Source)
+![Downloaded CSV Raw Dataset](assets/ecdc_raw_csv_dl_ds.png)
+
+### 🔹 File List Dataset  
+![File List Dataset](assets/ecdc_file_list_ds.png)
+
+### 🔹 Country Lookup Dataset
+![Country Lookup Dataset](assets/country_lookup_ds.png)
+
+---
+
+## 🔄 Pipelines  
+
+### 🔹 Pipeline List  
+![Pipelines List](assets/pipelines_list.png)
+
+### 🔹 Pipeline: Ingest ECDC Data  
+![pl_ingest_ecdc_data](assets/pl_ingest_ecdc_data.png)
+
+### 🔹 Pipeline: Ingest Population Data  
+![pl_ingest_population_data](assets/pl_ingest_population_data.png)
+
+### 🔹 Pipeline: Process Cases & Deaths  
+![pl_cases_deaths_dataflow](assets/pl_cases_deaths_dataflow.png)
+
+---
+
+## 🧪 Dataflows  
+
+### 🔹 Source (Dataflow)
+![Source Transform](assets/source_transform.png)
+
+### 🔹 Filter Transform  
+![Filter Transform](assets/filter_transform.png)
+
+### 🔹 Select Transform  
+![Select Transform](assets/select_transform.png)
+
+### 🔹 Pivot Transform  
+![Pivot Transform](assets/pivot_transform.png)
+
+### 🔹 Lookup Transform  
+![Lookup Transform](assets/lookup_transform.png)
+
+### 🔹 Sink Transform  
+![Sink Transform](assets/sink_transform.png)
+
+### 🔹 Dataflow Debug Output  
+![Dataflow Debug](assets/dataflow_debug.png)
+
+---
+
+
