@@ -35,13 +35,11 @@ This repository contains an end-to-end Azure Data Factory ETL pipeline built to 
 
 ---
 
-## How to deploy (quick)
+## How to deploy
 1. In Azure Portal, go to **Deploy a custom template** (or use Azure CLI/PowerShell).  
 2. Upload `ARMTemplateForFactory.json` and `ARMTemplateParametersForFactory.json`.  
 3. Provide parameter values (factory name, region, storage account names).  
 4. Validate and create.
-
-> Note: Linked templates are referenced by the main template, so keep the folder structure when deploying.
 
 ---
 
