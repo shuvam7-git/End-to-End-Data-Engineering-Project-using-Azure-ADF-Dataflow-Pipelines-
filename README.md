@@ -53,11 +53,11 @@ Below is the end-to-end architecture of the Azure Data Factory ETL pipeline used
 
 ## 🔗 Linked Services
 
+### 🔹 Linked Services List 
+![Linked Services List](assets/linked_services_list.png)
+
 ### 🔹 HTTP Linked Service  
 ![HTTP Linked Service](assets/ls_http_details.png)
-
-### 🔹 Lookup Linked Services  
-![Linked Services List](assets/linked_services_list.png)
 
 ---
 
